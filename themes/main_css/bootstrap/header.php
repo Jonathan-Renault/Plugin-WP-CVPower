@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style/default.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css' />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
+    <style>
+
+        /* ======= Rest  ==========   */
+        body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a{margin:0px; padding:0px;}
+
+
+        body{background-image:linear-gradient(to right bottom, rgba(77, 190, 213, 0.8), rgba(119, 155, 236, 0.8));
+            font-family:Arial, Helvetica, sans-serif;  font-size:15px; color:#4D4D4D;}
+        #wrapper{margin:20px auto; width:999px;}
+        .clear{clear:both;}
+
+        /*   =====  Main and Sub headings   ======   */
+        h1 { font-family: 'Yanone Kaffeesatz', arial, serif;  text-shadow: 2px 2px 2px #000; font-size:202px; color:#fff;}
+        h2{font-family: 'Crimson Text', arial, serif; font-size:35px; color:#000; font-weight:bold;}
+        h2 a, h2 a:visited, h2 a:active{font-family: 'Crimson Text', arial, serif; font-size:35px; color:#000; font-weight:normal; text-decoration:none; font-weight:bold;}
+        h2 a:hover{color:#FF9900}
+
+        /*   =====  Top header   ======   */
+        #header{}
+        #header:after{ clear:both; display:block; content:"";}
+        #header ul{color:#fff; font-size:14px; float:right; list-style:none; margin-top:10px;}
+        #header ul li{padding-bottom:6px;}
+
+        /*   =====  Links on the top   ======   */
+
+        #contact-info{color:#fff; font-size:14px; width:100%; border-bottom:2px dashed #000;  padding-bottom:20px; float:left; margin-bottom:20px; }
+        #contact-info .col1, #contact-info .col2{text-align:left; display:table-cell;}
+        #contact-info .col1{text-align:right; padding-right:10px;}
+        #contact-info a, #contact-info a:active, #contact-info a:visited{color:#fff;}
+        #contact-info a:hover{color:#5035E2; text-shadow: 0px 0px 5px #fff;}
+        .links{float:left; margin-left:155px;}
+
+        /*   =====  Introduction text   ======   */
+
+        #intro{margin-top:10px;}
+        #intro:after{ clear:both; display:block; content:"";}
+        #intro p{font-family: 'Crimson Text', arial, serif; font-size:45px; color:#fff; }
+        #intro p::selection{color:#000;}
+        .highlight{color:#FADA00;}
+
+        ::selection{background: #000; color:#fff;}       /* Safari */
+        ::-moz-selection{background: #000; color:#fff;}  /* Firefox */
+
+
+        /*   =====  Sections   ======   */
+        .section{margin:30px 0px 30px 0px;}
+        .section:after{ clear:both; display:block; content:"";}
+        .section-title{background-image:url(section-title-bg.png); background-repeat:no-repeat; width:171px; height:41px; float:left;}
+        .section-title:after{ clear:both; display:block; content:"";}
+        .section-title p{padding:7px 0px 0px 7px; font-weight:bold;}
+        .section-body{background-color:#fff; width:94%; margin:-10px 0px 0px 10px; padding:0px 25px 25px 25px;}
+
+        .section-body div{display:inline-table;}
+        .item-template{border-bottom:1px dashed #CCCCCC; width:100%; margin-bottom:25px;  margin-top:25px; padding-bottom:25px;}
+        .item-template:after{clear:both; display:block; content:"";}
+        .section-body p{font-size:14px; line-height:22px; margin-bottom:25px;}
+        .last-item{margin-bottom:0px; border-bottom:0px;}
+
+        .skill-name{float:left;}
+        .skill-rating{font-family: 'Crimson Text', arial, serif; font-size:55px; float:right; border:0px solid red; line-height:1px; padding-top:43px;}
+
+
+        a.hidden, a.hidden:hover, a.hidden:visited, a.hidden:active{text-decoration:none; color:#4D4D4D;}
+
+        .item-template-lessmargin{border-bottom:1px dashed #CCCCCC; width:100%; margin-bottom:25px;  margin-top:0px; padding-bottom:25px;}
+        .item-template-skills-lessmargin{clear:both; display:block; content:"";}
+
+        .your-details{float:right;}
+        .your-details ul{list-style:none; margin-top:15px;}
+        .your-details ul li{padding:9px 10px 7px 40px; height:25px; display:inline; background-image:url(../images/icon-check.jpg); background-repeat:no-repeat; }
+
+        .text-small{font-size:12px; color:#4D4D4D; text-transform:uppercase;}
+        .first{margin-bottom:3px; padding-top:10px;}
+
+        #go-top{margin:-8px 0px 0px 1px;}
+        .hand-cursor{cursor:pointer;}
+        .scroll-links{margin:3px 0px 0px 0px; color:#fff; width:100%; text-align:right;}
+        .scroll-links a, .scroll-links a:active, .scroll-links a:visited{color:#fff; font-size:10px; text-transform:uppercase;}
+        .scroll-links a:hover{color:#FFFF00;}
+
+        /*   =====  Footer   ======   */
+
+        #footer{color:#fff; font-size:12px;}
+        #footer p{margin-bottom:10px;}
+        #footer div{float:left; margin-right:5px;}
+        #footer a, #footer a:active, #footer a:visited{color:#FADA00; text-decoration:none;}
+        #footer a:hover{color:#FFFF00;  text-shadow: 0px 0px 5px #fff;}
+
+        /*   =====  Modal   ======   */
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            top:50%;
+            left:50%;
+            transform: translate(50%, 50%);
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-style{
+            margin: 0 auto;
+
+        }
+
+        .modal-size {
+            display: inline-block;
+
+
+        }
+    </style>
+</head>
+
+<body <?php body_class(); ?>>
+
+
+<div class="container">
+
+
+    <div class="row">
